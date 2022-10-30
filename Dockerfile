@@ -17,6 +17,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./api .
 
-COPY start.sh start.sh
-RUN chmod +x start.sh
-entrypoint "start.sh"
+# COPY start.sh start.sh
+# RUN chmod +x start.sh
+# entrypoint "start.sh"
