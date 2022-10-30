@@ -16,3 +16,5 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./api .
+
+CMD ["celery", "-A", "core", "worker", "-l", "info"]
