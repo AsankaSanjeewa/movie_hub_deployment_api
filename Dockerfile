@@ -16,7 +16,3 @@ RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./api .
-
-COPY start.sh /start.sh
-RUN chmod +x /start.sh
-ENTRYPOINT "/start.sh"
