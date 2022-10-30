@@ -17,4 +17,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY ./api .
 
-CMD ["celery", "-A", "core", "worker", "-l", "info"]
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
+entrypoint "/start.sh"
