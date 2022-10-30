@@ -19,4 +19,4 @@ COPY ./api .
 
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
-entrypoint "/start.sh"
+ENTRYPOINT "/start.sh"
